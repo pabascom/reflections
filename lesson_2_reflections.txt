@@ -29,3 +29,51 @@ versions in either the working directory or the repository with git
 diff. This makes it really easy to see what, exactly, will be changed
 with each commit, so you can make sure everything you want (and nothing
 you don't) makes it in.
+
+What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+Oh boy. Basically any time you want to add a new feature, or attempt
+something which may not work, it would be good to do it in a branch.
+Especially if you're trying to modify live code, you *have* to do
+development in a branch. That way, you still have a copy of the live
+version to modify if a bug turns up, or something like that. It keeps
+your speculation separate from your execution, you know?
+
+Not to mention, if you ever have more than one person working on a
+project, or if you ever want to work on more than one feature at once,
+you pretty much need to branch. Otherwise things just get too tangled
+up.
+
+How do the diagrams help you visualize the branch structure?
+
+Dude, that's how my brain works. I'm a visual creature. Drawing it
+doesn't change much; it was already a branching tree to me.
+
+They look cool though! And actually, now that I think of it, the
+act of drawing arrows (to represent each commit's reference to its
+parent) makes it clearer how they're connected to each other. In my
+imagination, the branches were solid, and I kind of expected the con-
+nections to be two-way. So I wouldn't have expected the whole "detached
+head" situation to be a thing. But the arrows make that clearer.
+
+What is the result of merging two branches together? Why do we represent
+it in the diagram the way we do?
+
+Merging two branches combines their changes into a single branch, so
+that both work histories are able to contribute to a single project.
+It's represented on the diagram as two paths combining, because two
+histories and two workflows are in fact recombining into a single
+history and a single body of work.
+
+What are the pros and cons of Git's automatic merging vs. always doing
+merges manually?
+
+Pros: doesn't require you to literally duplicate the work of an entire
+branch
+Cons: sometimes you have to resolve a confusing merge conflict or talk
+to a coworker
+
+I think the Ayes have it, yeah?
+
+
