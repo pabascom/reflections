@@ -5,3 +5,27 @@ files you need to start tracking your project. It's necessary to set up
 git; you can't track your files without installing the file tracker
 first.
 
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+The staging area acts as a medium in between the working directory and
+the repository. It allows you to see and evaluate the changes in any
+given commit before you--well, commit it. This is useful because it
+gives you a chance to reflect on and change what you're committing
+before it's accomplished. I actually decided to modify my last commit
+while it was in the staging area; if there weren't a staging area, it
+would have been too late. Just having that extra step helps you to stop
+and think.
+
+Besides, I guess without the staging area, it would be impossible to
+store the current state of your working directory in multiple commits.
+You would have to store all of it, or none of it.
+
+How can you use the staging area to make sure you have one commit per
+logical change?
+
+Well, files in the staging area can easily be compared to alternate
+versions in either the working directory or the repository with git
+diff. This makes it really easy to see what, exactly, will be changed
+with each commit, so you can make sure everything you want (and nothing
+you don't) makes it in.
